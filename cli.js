@@ -1,3 +1,4 @@
+// requirements
 var Word = require('./word.js');
 var inquirer = require('inquirer');
 
@@ -16,11 +17,11 @@ var Game = function(wordBank, wordsRight, guessesLeft, currentHouse) {
 		this.promptUser();
 	},
 
-	resetGuesses = function() {
+	this.resetGuesses = function() {
 		this.guessesLeft = 10;
 	},
 
-	promptUser = function() {
+	this.promptUser = function() {
 		var user = this;
 		inquirer.prompt([
 			{
@@ -60,3 +61,5 @@ var Game = function(wordBank, wordsRight, guessesLeft, currentHouse) {
 
 	}
 }
+
+startGame();

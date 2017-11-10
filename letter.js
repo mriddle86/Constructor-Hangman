@@ -1,4 +1,4 @@
-// constructor function to control showing a letter or blank
+// constructor function showing letter or blank
 var Letter = function(character) {
 	this.character = character;
 	this.show = false;
@@ -6,5 +6,5 @@ var Letter = function(character) {
 		return if (this.show == false) {"_"} else {this.character}
 	};
 };
-// the export of this constructor file
+// export of this file
 module.exports = letter;
